@@ -1,7 +1,7 @@
 import { CalendarOutlined } from "@ant-design/icons";
 import { CheckCircle } from '@mui/icons-material';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'; // Import ChevronLeftIcon
-import ChevronRightIcon from '@mui/icons-material/ChevronRight'; // Import ChevronRightIcon
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'; 
+import ChevronRightIcon from '@mui/icons-material/ChevronRight'; 
 import StarIcon from '@mui/icons-material/Star';
 import { Avatar, Box, Button, Chip, Divider, Grid, IconButton, Paper, Typography } from '@mui/material';
 import FormControl from '@mui/material/FormControl';
@@ -59,9 +59,9 @@ const TimeSlotButton = styled(Button)(({ theme, selected }) => ({
   border:'1px solid #666',
   marginRight: theme.spacing(1),
   color: 'black',
-  backgroundColor: selected ? '#388E3C' : '#fff', // Green for selected, white for others
+  backgroundColor: selected ? '#388E3C' : '#fff', 
   '&:hover': {
-    backgroundColor: selected ? '#388E3C' : '#f0f0f0', // Darker green for selected hover
+    backgroundColor: selected ? '#388E3C' : '#f0f0f0', 
   },
 }));
 // Custom styles for the DayButton
@@ -74,20 +74,20 @@ const DayButton = styled(Button)(({ theme, slots, selected }) => ({
 height:"7vw",
 width:'8vw', color: slots === 0 ? '#ccc' : selected ?'#1a5245':'black' ,
   fontWeight:slots === 0 ? '#ccc' : selected ? 'bold':"lighter",
-  minWidth: '80px', // Set minimum width for buttons
-  backgroundColor: slots === 0 ? '#ccc' : selected ? '#F2FBF2' : '#fff', // Red for selected, yellow for available
+  minWidth: '80px', 
+  backgroundColor: slots === 0 ? '#ccc' : selected ? '#F2FBF2' : '#fff', 
   '&:hover': {
-    backgroundColor: slots === 0 ? '#ccc' : selected ? '#4CAF50' : '#ccc', // Darker shades for hover
+    backgroundColor: slots === 0 ? '#ccc' : selected ? '#4CAF50' : '#ccc', 
   },
 }));
 
-// Custom styles for the Chevron buttons
+
 const StyledChevronButton = styled(Button)(({ theme }) => ({
   padding: '0.5rem 1rem',
   borderRadius: "50%",
   border:'1px solid #666',
   marginRight:theme.spacing(1),
-  minWidth: '40px', // Set minimum width for Chevron buttons
+  minWidth: '40px', 
   color: '#fff',
   backgroundColor: "#f0f0f0",
   '&:hover': {
@@ -96,10 +96,10 @@ const StyledChevronButton = styled(Button)(({ theme }) => ({
 }));
 
 const specializations = [
-  { icon: <FaRegUser size={40} />, label: "Women’s Health" }, // Outline icon
-  { icon: <FaRegHeart size={40} />, label: "Skin Care" },     // Outline icon
-  { icon: <FaShieldAlt size={40} />, label: "Immunity" },     // Same as it already represents an outline
-  { icon: <FaLeaf size={40} />, label: "Hair Care" },         // Same as it already represents an outline
+  { icon: <FaRegUser size={40} />, label: "Women’s Health" }, 
+  { icon: <FaRegHeart size={40} />, label: "Skin Care" },     
+  { icon: <FaShieldAlt size={40} />, label: "Immunity" },     
+  { icon: <FaLeaf size={40} />, label: "Hair Care" },         
 ];
 const concerns = [
   "Skin Treatment",
@@ -110,19 +110,18 @@ const concerns = [
   "Ovarian Cysts",
   "+ 5 More",
 ];
-/// Custom styles for the radio button container
 const StyledRadio = styled(Radio)(({ theme }) => ({
   '& .MuiRadio-root': {
-    color:' #F2FBF2', // Set the radio button color to green
+    color:' #F2FBF2', 
     '&$checked': {
-      color: '#F2FBF2', // Set the checked color to green
+      color: '#F2FBF2', 
     },
   },
   '& .MuiRadio-label': {
     marginLeft: theme.spacing(1),
   },
   '& .MuiSvgIcon-root': {
-    display: 'none', // Hide the default radio button icon
+    display: 'none', 
   },
 }));
 
@@ -139,8 +138,8 @@ const StyledBox = styled(Box)(({ theme }) => ({
     backgroundColor: '#f0f0f0',
   },
   '&.Mui-checked': {
-    backgroundColor: '#F2FBF2', // Set background color for checked option
-    border: '1px solid #4CAF50', // Set border color for checked option
+    backgroundColor: '#F2FBF2', 
+    border: '1px solid #4CAF50', 
   },
 }));
 
@@ -566,14 +565,14 @@ const ProfileCard = () => {
       
     }}
   >
-    {/* Background overlay */}
+    
     <Box
       sx={{
         position: "absolute",
         top: 0,
         left: 0,
         right: 0,
-        height: "14%", // Adjust the percentage here
+        height: "14%", 
         backgroundColor: "#DBF2DC",
         zIndex: 1,
       }}
@@ -705,9 +704,9 @@ const ProfileCard = () => {
             <div style={{ display: "flex", gap: 10, marginTop: 10 }}>
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2 }}>
             <StyledContainer sx={{ mt: 2 }}>
-      <StyledChevronButton variant="contained" color="primary">
+      {/* <StyledChevronButton variant="contained" color="primary"> */}
         <ChevronLeftIcon />
-      </StyledChevronButton>
+      {/* </StyledChevronButton> */}
       <DayButton
         variant="contained"
         slots={10}
@@ -740,9 +739,9 @@ const ProfileCard = () => {
         <br />
         <span style={{color:"yellow"}}>05 slots</span>
       </DayButton>
-      <StyledChevronButton variant="contained" color="primary">
+      {/* <StyledChevronButton variant="contained" color="primary"> */}
         <ChevronRightIcon />
-      </StyledChevronButton>
+      {/* </StyledChevronButton> */}
     </StyledContainer>
     </Box>
             </div>

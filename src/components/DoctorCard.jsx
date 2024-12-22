@@ -30,7 +30,7 @@ const DoctorCard = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Doctor Image */}
+        
         <Box
           sx={{
             width: '100px',
@@ -44,7 +44,7 @@ const DoctorCard = () => {
           }}
         >
           <img
-            src="https://s3-alpha-sig.figma.com/img/5af8/78e5/09217e175d69b8cfd3da49cb2a8a6437?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aThGT6X-pORybQWcBeE7-oXEvJ-Ey41vxaJEbYC5x0RpIwPk2t7IX5tqrdWOh1Rk3EtS2yHGIAqX0uhWIST~4ldJjf1GGSB7VBkPf~1QFL7Pz7Bu2fZFVBSlwyhK48cMSoIftI3gnBTEFOgqIc08H~Y5uCui~aGYtAP0Efi05fxiJ-5xZu~NSFVvgF4oONJNUvOiokHqHn9Tc7G0FutOuULrqp1fq9FwJun3vQaKLKL2KgfPMzp1ruFxGw-ZAMH5Lih5lJewq5DyNXZ1Kt3mUn6p8eBWc1JeJudEXo0Z6qkAIC4l2WK15oaxThlkjFG8V4mnAg1-gk9uZRIIgUeqbA__" // Replace with actual doctor image URL
+            src="https://s3-alpha-sig.figma.com/img/5af8/78e5/09217e175d69b8cfd3da49cb2a8a6437?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aThGT6X-pORybQWcBeE7-oXEvJ-Ey41vxaJEbYC5x0RpIwPk2t7IX5tqrdWOh1Rk3EtS2yHGIAqX0uhWIST~4ldJjf1GGSB7VBkPf~1QFL7Pz7Bu2fZFVBSlwyhK48cMSoIftI3gnBTEFOgqIc08H~Y5uCui~aGYtAP0Efi05fxiJ-5xZu~NSFVvgF4oONJNUvOiokHqHn9Tc7G0FutOuULrqp1fq9FwJun3vQaKLKL2KgfPMzp1ruFxGw-ZAMH5Lih5lJewq5DyNXZ1Kt3mUn6p8eBWc1JeJudEXo0Z6qkAIC4l2WK15oaxThlkjFG8V4mnAg1-gk9uZRIIgUeqbA__" 
             alt="Doctor"
             style={{ width: '9vw', height: '9vw', objectFit: 'cover' ,borderRadius:'50%'}}
           />
@@ -74,12 +74,12 @@ const DoctorCard = () => {
           </Box>
         </Box>
 
-        {/* Doctor Name */}
+        
         <Typography variant="h6" sx={{ fontWeight: '500',fontFamily: 'Poppins, Arial, sans-serif', color: '#000' }}>
           Dr. Prerna Narang
         </Typography>
 
-        {/* Specialization */}
+        
         <Typography
           variant="body2"
           sx={{
@@ -94,7 +94,7 @@ const DoctorCard = () => {
           <WcOutlinedIcon sx={{ fontSize: '1rem', color: '#4CAF50' }} /> Male-Female Infertility
         </Typography>
 
-        {/* Experience */}
+        
         <Typography
           variant="body2"
           sx={{
@@ -109,7 +109,7 @@ const DoctorCard = () => {
           <SchoolOutlinedIcon sx={{ fontSize: '1rem', color: '#4CAF50' }} /> 7 years of Experience
         </Typography>
 
-        {/* Languages */}
+        
         <Typography
           variant="body2"
           sx={{
@@ -124,7 +124,7 @@ const DoctorCard = () => {
           <TranslateOutlinedIcon sx={{ fontSize: '1rem', color: '#4CAF50' }} /> Speaks: English, Hindi, Marathi
         </Typography>
 
-        {/* Consultation Options */}
+        
         <Box
           sx={{
             display: 'flex',
@@ -167,7 +167,7 @@ const DoctorCard = () => {
           </Button>
         </Box>
 
-        {/* Action Buttons */}
+        
         <Button
           variant="outlined"
           fullWidth

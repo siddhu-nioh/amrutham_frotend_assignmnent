@@ -36,12 +36,12 @@ const FindDoctors = () => {
           alignItems: 'center',
           justifyContent: 'start',
           minHeight: '5vh',
-          backgroundColor: '#E8F5E9', // Light green background
+          backgroundColor: '#E8F5E9', 
           padding: '0.5rem',
           overflow: 'hidden',
         }}
       >
-        {/* Background Ellipses */}
+        
         <motion.div
         initial={{ opacity: 0, y: 70 }}
         animate={{ opacity: 1, y: 0 }}
@@ -96,7 +96,7 @@ const FindDoctors = () => {
           }}
         />
 </motion.div>
-        {/* Content */}
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -129,9 +129,9 @@ const FindDoctors = () => {
             zIndex: 1,
           }}
         >
-          <FormControl sx={{ minWidth: 200 ,height: '2.5vw', // Adjust height here
+          <FormControl sx={{ minWidth: 200 ,height: '2.5vw', 
     '& .MuiInputBase-root': {
-      height: '2.5vw', // Adjust input height
+      height: '2.5vw', 
     },padding:'0.5vw'}}>
             <InputLabel sx={{fontSize:'1vw'}} >
               <LocationOn sx={{ fontSize: '1rem', marginRight: '0.5rem' }} />{' '}
@@ -155,9 +155,9 @@ const FindDoctors = () => {
               flexGrow: 1,
               backgroundColor: '#FFF',
               borderRadius: '8px',
-              height: '2.5vw', // Adjust height here
+              height: '2.5vw', 
     '& .MuiInputBase-root': {
-      height: '2.5vw', // Adjust input height
+      height: '2.5vw', 
     },
             }}
             InputProps={{
@@ -180,7 +180,7 @@ const FindDoctors = () => {
         </motion.div>
       </Box>
 
-      {/* Filters Section */}
+      
       <Box
         sx={{
           display: 'flex',
@@ -192,11 +192,11 @@ const FindDoctors = () => {
          
         }}
       >
-        <FormControl sx={{ marginRight: 3, minWidth: 120,height: '2vw', // Adjust height here
+        <FormControl sx={{ marginRight: 3, minWidth: 120,height: '2vw', 
     '& .MuiInputBase-root': {
-      height: '2vw', // Adjust input height
+      height: '2vw', 
     },padding:'0.5vw','& fieldset': {
-        borderColor: '#ececec', // Default border color
+        borderColor: '#ececec', 
       },}}>
           <InputLabel sx={{fontSize:'1vw'}}>Expertise</InputLabel>
           <Select defaultValue="" sx={{ backgroundColor: '#ececec' }}>
@@ -206,11 +206,11 @@ const FindDoctors = () => {
             <MenuItem value="hair-care">Hair Care</MenuItem>
           </Select>
         </FormControl>
-        <FormControl sx={{ marginRight: 3, minWidth: 120,height: '2vw', // Adjust height here
+        <FormControl sx={{ marginRight: 3, minWidth: 120,height: '2vw', 
     '& .MuiInputBase-root': {
-      height: '2vw', // Adjust input height
+      height: '2vw', 
     },padding:'0.5vw','& fieldset': {
-        borderColor: '#ececec', // Default border color
+        borderColor: '#ececec', 
       },}}>
           <InputLabel sx={{fontSize:'1vw'}}>Gender</InputLabel>
           <Select defaultValue="" sx={{ backgroundColor: '#ececec' }}>
@@ -218,11 +218,11 @@ const FindDoctors = () => {
             <MenuItem value="Female">Female</MenuItem>
           </Select>
         </FormControl>
-        <FormControl sx={{ marginRight: 3, minWidth: 120 ,height: '2vw', // Adjust height here
+        <FormControl sx={{ marginRight: 3, minWidth: 120 ,height: '2vw', 
     '& .MuiInputBase-root': {
-      height: '2vw', // Adjust input height
+      height: '2vw', 
     },padding:'0.5vw','& fieldset': {
-        borderColor: '#ececec', // Default border color
+        borderColor: '#ececec', 
       },}}>
           <InputLabel sx={{fontSize:'1vw'}}>Fees</InputLabel>
           <Select defaultValue="" sx={{ backgroundColor: '#ececec' }}>
@@ -231,11 +231,11 @@ const FindDoctors = () => {
             <MenuItem value="Rs.2100-Rs.5000">Rs.2100-Rs.5000</MenuItem>
           </Select>
         </FormControl>
-        <FormControl sx={{ marginRight: 2, minWidth: 140,height: '2vw', // Adjust height here
+        <FormControl sx={{ marginRight: 2, minWidth: 140,height: '2vw', 
     '& .MuiInputBase-root': {
-      height: '2vw', // Adjust input height
+      height: '2vw', 
     },padding:'0.6vw','& fieldset': {
-        borderColor: '#ececec', // Default border color
+        borderColor: '#ececec', 
       },}}>
           <InputLabel sx={{fontSize:'1vw'}}>Languages</InputLabel>
           <Select defaultValue="" sx={{ backgroundColor: '#ececec' }}>
@@ -245,11 +245,11 @@ const FindDoctors = () => {
             <MenuItem value="Tamil">Tamil</MenuItem>
           </Select>
         </FormControl>
-        <FormControl sx={{ marginRight: 2, minWidth: 120,height: '2vw', // Adjust height here
+        <FormControl sx={{ marginRight: 2, minWidth: 120,height: '2vw', 
     '& .MuiInputBase-root': {
-      height: '2vw', // Adjust input height
+      height: '2vw', 
     },padding:'0.6vw' ,'& fieldset': {
-        borderColor: '#A5D6A7', // Default border color
+        borderColor: '#A5D6A7', 
       },
      }}>
           <InputLabel sx={{fontSize:'1vw',border:''}}>All Filters</InputLabel>
@@ -291,7 +291,7 @@ const FindDoctors = () => {
         ))}
       </Box>
   
-      {/* Doctor Cards Section */}
+      
       <Box
         sx={{
           marginTop: '2rem',

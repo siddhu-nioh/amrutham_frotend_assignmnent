@@ -9,7 +9,7 @@ const Header= () => {
   return (
     <AppBar position="static" elevation={0} sx={{ bgcolor: '#FFF7E2', padding: '10px 0' }}>
       <Toolbar sx={{ justifyContent: 'space-between', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
-        {/* Logo */}
+        
         <Typography
           variant="h6"
           component="div"
@@ -18,7 +18,7 @@ const Header= () => {
           AMRUTAM
         </Typography>
 
-        {/* Navigation Links */}
+        
         <Box sx={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
           <Typography variant="body1" sx={{ fontSize: '1.2vw', color: '#333', cursor: 'pointer',fontFamily: 'Poppins, Arial, sans-serif' }}>
             Home
@@ -31,7 +31,7 @@ const Header= () => {
           </Typography>
         </Box>
 
-        {/* Buttons */}
+        
         <Box sx={{ display: 'flex', gap: '15px' }}>
           <Button
             variant="outlined"
